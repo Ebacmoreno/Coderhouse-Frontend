@@ -1,0 +1,207 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0e0;
+    color: #333;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #222;
+    color: #eee;
+    padding: 1rem 20px;
+    text-align: center;
+
+    /* Propiedades para la imagen de fondo */
+    background-image: url('../imgs/caidababilonia.jpeg');
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+
+    /* Hacemos el header más alto. Si era 1rem de padding, ahora será más */
+    min-height: 250px;
+
+    /* Puedes añadir un filtro oscuro sobre la imagen para que el texto se lea mejor */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Para asegurar que el texto sea visible si la imagen es oscura */
+.logo h1 a,
+.slogan,
+.main-nav ul li a {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.main-nav ul li a:hover {
+    color: #aaffaa;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilos para la navegación */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #aaddaa;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Estilos para todas las secciones dentro del main */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Estilos para listas */
+ul {
+    list-style: disc;
+    margin-left: 25px;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+dl {
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* Estilos para enlaces dentro del contenido */
+a {
+    color: #0077aa;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 1.5rem 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #aaddaa;
+}
