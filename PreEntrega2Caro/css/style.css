@@ -6,84 +6,61 @@ body {
     padding: 0;
     background-color: #f0f0e0;
     color: #333;
+    font-size: 14px; /* Tamaño base para móviles */
 }
 
-/* Estilos para la cabecera */
-header {
-    background-color: #222;
-    color: #eee;
-    padding: 1rem 20px;
-    text-align: center;
-
-    /* Propiedades para la imagen de fondo */
-    background-image: url('../imgs/caidababilonia.jpeg');
-    background-size: cover;
-    background-position: center 80%;
-    background-repeat: no-repeat;
-
-    /* Hacemos el header más alto. Si era 1rem de padding, ahora será más */
-    min-height: 250px;
-
-    /* Puedes añadir un filtro oscuro sobre la imagen para que el texto se lea mejor */
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.5);
+/* Estilos para la navbar de Bootstrap */
+.navbar {
+    min-height: 120px;
+    padding: 1rem 0;
 }
 
-/* Para asegurar que el texto sea visible si la imagen es oscura */
-.logo h1 a,
-.slogan,
-.main-nav ul li a {
+.navbar-brand {
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+/* Estilos responsive para el logo del navbar */
+.navbar-logo {
+    font-size: 1.8rem; /* Tamaño base para móviles */
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
-.main-nav ul li a:hover {
-    color: #aaffaa;
-}
-
-.logo h1 {
+    font-family: 'Playfair Display', serif;
     margin: 0;
-    font-size: 2.2rem;
-    font-family: 'Playfair Display', serif;
 }
 
-.logo a {
-    text-decoration: none;
-    color: #eee;
-    font-weight: bold;
-}
-
-.slogan {
-    font-size: 1.1rem;
+/* Estilos responsive para el slogan del navbar */
+.navbar-slogan {
+    font-size: 0.9rem; /* Tamaño base para móviles */
     font-style: italic;
-    margin-top: 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     font-family: 'Playfair Display', serif;
+    margin-top: 5px;
 }
 
-/* Estilos para la navegación */
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-
-.main-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #aaddaa;
+.navbar-nav .nav-link {
+    color: #aaddaa !important;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Tamaño más pequeño para móviles */
     transition: color 0.3s ease;
     font-family: 'Playfair Display', serif;
+    margin: 0 10px;
 }
 
-.main-nav ul li a:hover {
-    color: #ffffff;
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* Estilos para el contenido principal */
@@ -104,7 +81,7 @@ section {
 
 h2 {
     color: #444;
-    font-size: 1.8rem;
+    font-size: 1.4rem; /* Tamaño más pequeño para móviles */
     margin-bottom: 15px;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
@@ -113,7 +90,7 @@ h2 {
 
 h3 {
     color: #555;
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Tamaño más pequeño para móviles */
     margin-top: 20px;
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
@@ -121,7 +98,7 @@ h3 {
 
 h4 {
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Tamaño más pequeño para móviles */
     margin-top: 10px;
     margin-bottom: 5px;
     font-family: 'Playfair Display', serif;
@@ -130,6 +107,7 @@ h4 {
 p {
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
+    font-size: 0.95rem; /* Tamaño más pequeño para móviles */
 }
 
 /* Estilos para imágenes */
@@ -146,6 +124,7 @@ ul {
     margin-left: 25px;
     padding: 0;
     font-family: 'Playfair Display', serif;
+    font-size: 0.95rem; /* Tamaño más pequeño para móviles */
 }
 
 ul li {
@@ -155,6 +134,7 @@ ul li {
 dl {
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
+    font-size: 0.95rem; /* Tamaño más pequeño para móviles */
 }
 dt {
     font-weight: bold;
@@ -185,6 +165,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-family: 'Playfair Display', serif;
+    font-size: 0.9rem; /* Tamaño más pequeño para móviles */
 }
 
 .footer-section {
@@ -204,4 +185,201 @@ footer ul li {
 
 footer a {
     color: #aaddaa;
+}
+
+/* Estilos para Grid de Productos */
+.product-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.product-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: #0077aa;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Media Queries - Mobile First */
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .navbar-logo {
+        font-size: 2rem;
+    }
+    
+    .navbar-slogan {
+        font-size: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    ul {
+        font-size: 1rem;
+    }
+    
+    dl {
+        font-size: 1rem;
+    }
+    
+    footer {
+        font-size: 1rem;
+    }
+    
+    /* Grid de productos para tablets */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .product-item h4 {
+        font-size: 1.2rem;
+    }
+    
+    .product-item .price {
+        font-size: 1.3rem;
+    }
+    
+    .product-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .navbar-logo {
+        font-size: 2.2rem;
+    }
+    
+    .navbar-slogan {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1.05rem;
+    }
+    
+    ul {
+        font-size: 1.05rem;
+    }
+    
+    dl {
+        font-size: 1.05rem;
+    }
+    
+    footer {
+        font-size: 1.05rem;
+    }
+    
+    /* Flex para navbar en escritorio */
+    .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .navbar-nav .nav-item {
+        flex-shrink: 0;
+    }
+    
+    .navbar-nav .nav-link {
+        white-space: nowrap;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* Grid de productos para desktop */
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .product-item h4 {
+        font-size: 1.3rem;
+    }
+    
+    .product-item .price {
+        font-size: 1.4rem;
+    }
+    
+    .product-item p {
+        font-size: 1.05rem;
+    }
 }
